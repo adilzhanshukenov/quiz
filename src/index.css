@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: 'Karla', sans-serif;
+  line-height: 1.5;
+  font-weight: 700;
+  font-size: 13px;
+
+  color-scheme: light dark;
+  color: #293264;
+  background-color: #F5F7FB;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-image: url('./assets/blue.png'), url('./assets/yellow.png');
+  background-repeat: no-repeat;
+  background-position: bottom left, top right;
+  background-size: 30%, 30%;
+  margin:0;
+}
+
+h1 {
+  font-size: 45px;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 25px;
+  font-family: 'Inter', sans-serif;
+}
+
+button {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.4s ease;
+  border: none;
+}
+
+button:hover {
+  background-color: rgb(27, 101, 161);
+  color: white;
+}
+
+hr {
+  height: 5px;
+  color: #293264;
+  border: 1px solid #DBDEF0;
+  border-radius: 3px;
+  width: auto;
+}
+
+.button--start {
+  margin: 0;
+  height: 50px;
+  width: 200px;
+  border: none;
+  border-radius: 10px;
+  background-color: #293264;
+  font-size: 20px;
+}
+
+.start {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.quiz { 
+  height: 100vh;
+  width: 100vw;
+  padding: 50px;
+}
+
+.question-answer {
+  padding: 20px 20px 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.question {
+  font-size: 17px;
+  margin: 0;
+}
+
+.answers {
+  display: flex;
+  justify-content: left;
+  gap: 10px;
+  padding-top: 10px;
+}
+
+.answer-button { 
+  border: 1px solid #4D5B9E;
+  border-radius: 8px;
+  background-color: transparent;
+  color: #293264;
+  transition: background-color 0.4s ease;
+}
+
+.answer-button-selected { 
+  border: 1px solid #4D5B9E;
+  border-radius: 8px;
+  background-color: #293264;
+  color: white;
+  transition: background-color 0.4s ease;
+}
+
+.answer-button:active {
+  background-color: #D6DBF5;
+  color: #293264;
+}
+
+.answer-button:focus {
+  background-color: #D6DBF5;
+}
+
+.buttons-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons-section > button {
+  background: #4D5B9E;
+  color: white;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 16px;
+}
+
+.score {
+  padding: 20px 20px 0 20px;
+}
