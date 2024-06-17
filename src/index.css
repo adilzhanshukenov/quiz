@@ -148,3 +148,19 @@ hr {
 .score {
   padding: 20px 20px 0 20px;
 }
+
+.entryData {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+select {
+  color: black;
+  
+}
+
+input {
+  background-color: white;
+  color: black;
+}
